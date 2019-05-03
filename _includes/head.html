@@ -1,0 +1,18 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="description" content="{{ site.description }}">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+  {% if site.css == 'inline' %}
+  <style>
+      {% capture inline-styles %}
+      {% include style.scss %}
+      {% endcapture %}
+      {{ inline-styles | scssify }}
+  </style>
+  {% else %}
+  <link href="/css/style.css" rel="stylesheet">
+  {% endif %}
+</head>

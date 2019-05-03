@@ -1,0 +1,23 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% include head.html %}
+
+<body class="debug-grid sans-serif lh-copy ma0">
+  <header>
+    {% if page.header %}
+    {% include navigation.html %}
+    {% endif %}
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  {% if page.footer %}
+  {% include footer.html %}
+  {% endif %}
+</body>
+
+</html>
