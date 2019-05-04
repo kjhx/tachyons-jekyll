@@ -1,2 +1,2 @@
-# tachyons-jekyll
-Jekyll boilerplate using Tachyons
+![Logo Header](.github/IMAGES/header.png)
+> Jekyll boilerplate using Tachyons
