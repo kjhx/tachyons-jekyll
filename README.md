@@ -17,6 +17,7 @@ This is a boilerplate that already includes all the funcitonality I immediately 
 1. Clone or fork this repository
 2. Run `bundle install`
 3. Run `make` to serve and build
+    * other usage: `make [build | clean | doctor | serve]`
 4. Get started on your project
 
 ## Configuration
